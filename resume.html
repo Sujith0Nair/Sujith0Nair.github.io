@@ -65,6 +65,20 @@
         .app-link-icon:hover {
             color: #3B82F6; /* blue-500 */
         }
+        .skills-columns {
+            column-count: 3;
+            column-gap: 2em;
+        }
+        @media print {
+            .skills-columns {
+                column-count: 3 !important;
+                column-gap: 2em !important;
+            }
+            .skills-section {
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -72,7 +86,7 @@
         <!-- Header -->
         <div class="text-left">
             <h1 class="text-4xl font-bold text-black">Sujith Pudussery</h1>
-            <p class="text-lg mt-1 job-title">Senior Unity Developer | Systems & Performance Specialist</p>
+            <p class="text-lg mt-1 job-title">Senior Game Developer (Unity) | Architecture & Performance Specialist</p>
             <div class="mt-4 flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-2 text-sm text-gray-600">
                 <span class="contact-item">
                     <svg class="contact-icon" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
@@ -100,7 +114,9 @@
                 </a>
             </div>
         </div>
-
+        <div class="mt-6 mb-2 text-base text-gray-700 font-medium">
+            A results-driven Senior Game Developer with 5 years of experience architecting and optimizing games for high performance and stability. Proven ability to lead development teams, enhance existing codebases, and collaborate with cross-functional experts to deliver exceptional player experiences in the casual games space.
+        </div>
         <!-- Experience -->
         <div class="flex justify-between items-end section-title">
             <span>EXPERIENCE</span>
@@ -131,7 +147,7 @@
                     <li>Led a product team of 8 developers, orchestrating the release pipeline and managing cross-functional collaboration to ensure timely delivery of milestones.</li>
                     <li>Authored core features for a client-facing "super app" on iOS and Android, supporting a library of 50+ interactive games and achieving a 4.5-star user rating.</li>
                     <li>Constructed and abstracted a multiplayer networking stack with real-time sockets, reducing the time to implement new multiplayer features by 40%.</li>
-                    <li>Architected a scene parser for on-the-fly regeneration and a no-code logic block system, which cut designer prototyping time by 70% and rendered scenes with 5,000+ objects in under 2 seconds.</li>
+                    <li>Architected a scene parser for on-the-fly regeneration and a no-code logic block system, improving the workflow for artists and designers, and cutting prototyping time by 70% and rendered scenes with 5,000+ objects in under 2 seconds.</li>
                 </ul>
             </div>
 
@@ -156,7 +172,7 @@
                 </div>
                 <ul class="mt-2 text-sm">
                     <li>Engineered a proprietary physical-digital interaction algorithm that achieved 99.5% detection accuracy for figurines placed on tablet devices, with a response time under 100ms.</li>
-                    <li>Spearheaded PlayFab SDK integration for internal content management, streamlining the delivery pipeline for design & QA teams and reducing content setup time by over 90%.</li>
+                    <li>Spearheaded PlayFab SDK integration driving the resolution of content pipeline problems and streamlining the delivery pipeline for design & QA teams and reducing content setup time by over 90%.</li>
                     <li>Authored custom editor tools that automated asset configuration, reducing the setup time for the art and design teams by 60%.</li>
                     <li>Created an IK-driven animation system to synchronize character lip movements with real-time voice input, achieving a 95% accuracy rating in user tests for realism in VR.</li>
                 </ul>
@@ -232,7 +248,7 @@
                     </p>
                 </div>
                 <ul class="mt-2 text-sm">
-                    <li>A 3D puzzle shooter where players aim and shoot at a rotating tower of blocks. The core mechanic involves matching the projectile's color with the blocks on the tower to blast them away.</li>
+                    <li>A casual 3D puzzle shooter where players aim and shoot at a rotating tower of blocks. The core mechanic involves matching the projectile's color with the blocks on the tower to blast them away.</li>
                     <li>Progress through multiple levels, each featuring a new, dynamically generated tower that presents a unique challenge and ensures high replayability.</li>
                     <li><b>Technologies:</b> Unity, C#, WebGL</li>
                 </ul>
@@ -241,11 +257,11 @@
 
 
         <!-- Skills -->
-        <h2 class="section-title">SKILLS</h2>
-        <div class="text-sm">
+        <div class="skills-section text-sm">
+            <h2 class="section-title">SKILLS</h2>
             <p><strong class="company-name">Languages:</strong> C#, HLSL, Dart (Basic), Python (Basic)</p>
             <p class="mt-2"><strong class="company-name">Engine & Tools:</strong> Unity (URP/HDRP, DOTS/ECS, Unity as a Library), Flutter, Visual Studio, Git, Photon, PlayFab, Oculus SDK, Blender, Jira</p>
-            <p class="mt-2"><strong class="company-name">Technical Expertise:</strong> Data Structures & Algorithms, Object-Oriented Programming (OOP), Mobile Development (iOS & Android), Game Mechanics, Multiplayer Networking, Inverse Kinematics (IK), Custom Editor Tooling, Asset Bundle Management, Performance Optimization (CPU/GPU), WebGL Builds, VR/XR Development, Hybrid App Development, OTA Code Compilation Pipeline Development, Software Architecture</p>
+            <p class="mt-2"><strong class="company-name">Technical Expertise:</strong> Data Structures & Algorithms, Unity UI & Animation Systems, Memory Management, Object-Oriented Programming (OOP), Mobile Development (iOS & Android), Game Mechanics, Multiplayer Networking, Inverse Kinematics (IK), Custom Editor Tooling, Asset Bundle Management, Performance Optimization (CPU/GPU), WebGL Builds, VR/XR Development, Hybrid App Development, OTA Code Compilation Pipeline Development, Software Architecture</p>
             <p class="mt-2"><strong class="company-name">Methodologies:</strong> Agile/Scrum, Technical Documentation, Prototyping, Code Review, CI/CD</p>
         </div>
 
